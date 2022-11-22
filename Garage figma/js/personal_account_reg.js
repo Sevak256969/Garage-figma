@@ -53,5 +53,3 @@ const registor = {
     .then(response => console.log(response.json()))
     .catch(er => console.error(er))
   })
-
-
