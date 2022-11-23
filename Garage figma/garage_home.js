@@ -1,3 +1,94 @@
+
+// const parent=document.querySelector('.parent');
+// let pageCount=document.querySelector('.page');
+
+// let currentPage=1;
+// let count_items_per_page=window.innerWidth > 1440 ? 6 : window.innerWidth > 1024 ? 4 : 2;
+// let response;
+// let data=[];
+// async function f2() {
+//   const users = await fetch(`https://retoolapi.dev/fHtZfi/data`);
+//    data=await users.json();
+ 
+// };
+
+
+// async function f1() {
+//   const users = await fetch(`https://retoolapi.dev/fHtZfi/data?_page=${currentPage}&_limit=${count_items_per_page}`);
+//    response = await users.json();
+//   document.querySelector('.loader').style.display='none'
+// };
+
+// async function changePage(page){
+//   await f1();
+
+// if(page<=1){
+//   page=1
+// }
+// if(page>pageNum()){
+//   page=pageNum()
+// }
+//     parent.innerHTML="";
+
+//   response.forEach((item,index)=>{
+
+//       let div=document.createElement('div')
+//         div.innerHTML=`<div class="items_grid ">
+//             <img class="grid_img"src="${item.Img}" alt="">
+//              <h3 class="grid_h3">${item.Name}</h3>
+//              <p class="grid_p">${item.Dis}</p>
+//              <div class="item_info">
+//                  <p class="price">${item.Price}</p> <img src="./img/jrachap.png" alt="">
+//                  <a href=""><img class="buy" src="./img/kaylaska.png" alt=""></a> 
+//              </div>`
+//       parent.append(div)
+//     }
+//   )
+
+
+//   let move=2;
+//   let count=[];
+//   let pageDots=[];
+//   let elem;
+//   let left=page;
+//   let right=page+move+1;
+
+//   for(let i=1; i<=pageNum();  i++ ){
+//     if(i==1 || i===pageNum() || (i>= left && i<right)){
+
+//           count.push(i)
+//     }
+//   }
+//   for(let i of count){
+//      if(elem){
+//         if(i-elem==2){ 
+//            pageDots.push(elem+1)
+//         }else if(i-elem!=1){
+//             pageDots.push('...')
+//         }
+//      }
+//      pageDots.push(i)
+//      elem=i
+//   }
+//   pageCount.innerHTML=''
+//   for(let j of pageDots){
+//    let span=document.createElement('span');
+//    span.innerText=j;
+//    span.addEventListener('click',()=>changePage(j+1))
+//    pageCount.append(span)
+//   }
+
+// }
+
+// window.onload=()=>{
+//   f2() 
+//   changePage(1)
+  
+// }
+
+//  const  pageNum=()=>data.length ?  Math.ceil(data.length/count_items_per_page) : 1 ;
+
+
 let prod_quant =  window.innerWidth > 1440 ? 5 : window.innerWidth > 1024 ? 4 : 2;
 
 let div1 = document.querySelector(".div7_grid_cont_product");
@@ -74,6 +165,7 @@ console.log(page,'page');
       div4.append(div);
     }
   });
+  
 }
 
 const pageCount = () => Math.ceil(listitem.length / prod_quant);
@@ -82,33 +174,9 @@ window.onload = () => {
   changePage(1);
 };
 
-function pagination(c, m) {
-  let current = c,
-      last = m,
-      delta = 2,
-      left = current - delta,
-      right = current + delta + 1,
-      range = [],
-      rangeWithDots = [],
-      l;
 
-  for (let i = 1; i <= last; i++) {
-      if (i == 1 || i == last || i >= left && i < right) {
-          range.push(i);
-      }
-  }
 
-  for (let i of range) {
-      if (l) {
-          if (i - l === 2) {
-              rangeWithDots.push(l + 1);
-          } else if (i - l !== 1) {
-              rangeWithDots.push('...');
-          }
-      }
-      rangeWithDots.push(i);
-      l = i;
-  }
 
-  return rangeWithDots;
-}
+
+
+
