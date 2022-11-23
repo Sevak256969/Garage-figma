@@ -1,14 +1,14 @@
 const registor = {
     email:"",
-    lastName:"",
     password:"",
+    passwordRepeat:"",
+    lastName:"",
     firstName: "",
-    middleName:"",
-    passwordRepeat:""
+    middleName:""
   }
   const form = document.formRegistor;
   form[0].addEventListener("change",event=>{   
-    if(registor.password = event.target.value){
+    if(registor.email = event.target.value){
     form[0].classList.add("success")
   }else{
     form[0].classList.add("error")
@@ -38,20 +38,20 @@ const registor = {
   })
   form[3].addEventListener("change",event=>{
     if(event.target.value.match(/^[A-Z]/)){
-      registor.firstName = event.target.value;
+      registor.lastName = event.target.value;
       form[3].classList.add("success")
     }else{
       form[3].classList.add("error")
-      form[3].nextElementSibling.innerHTML="First name should contain only letters"
+      form[3].nextElementSibling.innerHTML="Last name should contain only letters"
     }
   })
   form[4].addEventListener("change",event=>{
     if(event.target.value.match(/^[A-Z]/)){
-      registor.lastName = event.target.value;
+      registor.firstName = event.target.value;
       form[4].classList.add("success")
     }else{
       form[4].classList.add("error")
-      form[4].nextElementSibling.innerHTML="Last name should contain only letters"
+      form[4].nextElementSibling.innerHTML="First name should contain only letters"
     }
   })
   form[5].addEventListener("change",event=>{
@@ -76,3 +76,12 @@ const registor = {
     .then(response => console.log(response.json()))
     .catch(er => console.error(er))
   })
+  fetch("https://api-generator.retool.com/78mo0Y/registor")
+  .then(response => response.json())
+  .then(json => {
+    const result = json.filter(user => user.email === "sevmovsisyan@mail.ru");
+    console.log(result);
+  })
+  .catch(er => console.error(er))
+
+ 
