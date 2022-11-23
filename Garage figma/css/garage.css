@@ -1226,12 +1226,27 @@
   font-family: Gilroy-700;
   font-size: 64px;
   color: #434242;
-  margin: 50px 0px 50px 0px;
 }
 .per_acc_reg_mine_div2 {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.inputItem{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.inputItem span{
+  position: absolute;
+  bottom: -50px;
+}
+.formRegistor{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 70px;
+
 }
 .parmd2_1_input {
   width: 265px;
@@ -1241,7 +1256,6 @@
   font-family: Gilroy-400;
   font-size: 18px;
   color: #A6A6A6;
-  margin: 19px 24px 19px 24px;
 }
 .parmd2_3_button {
   width: 265px;
@@ -1252,6 +1266,7 @@
   font-size: 20px;
   color: white;
   margin-top: 80px;
+  align-self:center;
 }
 .parmd2_4_p {
   text-align: center;
@@ -1262,6 +1277,12 @@
 }
 .parmd2_4_a {
   color: rgba(255, 129, 129, 1);
+}
+.error{
+  border: solid red;
+}
+.success{
+  border: solid green;
 }
 
 
