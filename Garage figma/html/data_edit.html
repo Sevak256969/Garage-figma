@@ -21,18 +21,24 @@
                     </div>
                     <div class="md_menu">
                         <ul class="md_menu_ul">
-                            <li class="md_menu_li">Главная</li>
-                            <li class="md_menu_li">Pro-Запрос</li>
-                            <li class="md_menu_li">Гараж</li>
-                            <li class="md_menu_li">Контакты</li>
-                            <li class="md_menu_li">Заказы</li>                   
+                            <li class="md_menu_li"><a href="../garage_home.html">Главная</a></li>
+                            <li class="md_menu_li"><a href="pro.html">Pro-Запрос</a></li>
+                            <li class="md_menu_li"><a href="garage.html">Гараж</a></li>
+                            <li class="md_menu_li"><a href="contacts.html">Контакты</a></li>
+                            <li class="md_menu_li"><a href="orders.html">Заказы</a></li>                   
                         </ul>
                     </div>
                     <div class="md_menu2">
-                        <img class="md_menu2_img1" src="../Icons/icon_shop.svg" alt="icon_shop">
+                        <a href="card.html"><img class="md_menu2_img1" src="../Icons/icon_shop.svg" alt="icon_shop"></a>
+
                         <p class="md_menu2_shop_cost">100000р.</p>
-                        <img class="md_menu2_img2" src="../Icons/icon_login.svg" alt="icon_login">
-                        <button class="md_menu2_button">Войти</button>
+                        <a href="./my_info.html"><img class="md_menu2_img2" src="../Icons/icon_login.svg" alt="icon_login"></a>         
+                        <button class="md_menu2_button"><a href="authorization_orders.html">Войти</a></button>
+                    </div>
+                    <div class="md_menu_mobile">
+                        <img class="md_mm_img" src="../Icons/mobile_menu.svg" alt="Menu">
+                        <img class="md_mm_img"src="../Icons/mobile_menu.svg" alt="Menu">
+                        <img class="md_mm_img"src="../Icons/mobile_menu.svg" alt="Menu">
                     </div>
                 </div>
                 <!-- DIV 1 SEARCH -->
@@ -55,20 +61,21 @@
                 <div class="date_edit_mine_div2">
                     <div class="date_edit_mine_div2_1">
                         <form action="#">
-                            <input class="demd2_1_input" type="text" value="E-mail">
-                            <input class="demd2_1_input" type="text" value="Пароль">
-                            <input class="demd2_1_input" type="text" value="Повтор пароля">
+                            <input class="demd2_1_input" type="email" placeholder="E-mail">
+                            <input class="demd2_1_input" type="password" placeholder="Пароль">
+                            <input class="demd2_1_input" type="password" placeholder="Повтор пароля">
                         </form>
                     </div>
                     <div class="date_edit_mine_div2_2">
                         <form action="#">
-                            <input class="demd2_1_input" type="text" value="Фамилия">
-                            <input class="demd2_1_input" type="text" value="Имя">
-                            <input class="demd2_1_input" type="text" value="Отчество">
+                            <input class="demd2_1_input" type="text" placeholder="Фамилия">
+                            <input class="demd2_1_input" type="text" placeholder="Имя">
+                            <input class="demd2_1_input" type="text" placeholder="Отчество">
                         </form>
                     </div>
                     <div class="date_edit_mine_div2_3">
-                        <button class="demd2_3_button">Применить</button>
+                        <button class="demd2_3_button"><a href="./my_info.html">Применить</a>
+                            </button>
                     </div>
                     <div class="date_edit_mine_div2_4">
                         <p class="demd2_4_p">Нажимая кнопку “Применить” вы примимаете нашу <br>
@@ -119,5 +126,10 @@
             </div>
         </section>
     </section>
+    <script>
+        let sing=document.querySelector('.md_menu2_button');
+        sing.innerText=JSON.parse(localStorage.getItem('user')).firstName|| 'Войти'
+    </script>
+    <script src="../js/change.js"></script>
 </body>
 </html>

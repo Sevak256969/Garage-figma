@@ -21,18 +21,19 @@
                     </div>
                     <div class="md_menu">
                         <ul class="md_menu_ul">
-                            <li class="md_menu_li">Главная</li>
-                            <li class="md_menu_li">Pro-Запрос</li>
-                            <li class="md_menu_li">Гараж</li>
-                            <li class="md_menu_li">Контакты</li>
-                            <li class="md_menu_li">Заказы</li>                   
+                            <li class="md_menu_li"><a href="garage_home.html">Главная</a></li>
+                            <li class="md_menu_li"><a href="./html/pro.html">Pro-Запрос</a></li>
+                            <li class="md_menu_li"><a href="./html/garage.html">Гараж</a></li>
+                            <li class="md_menu_li"><a href="./html/contacts.html">Контакты</a></li>
+                            <li class="md_menu_li"><a href="./html/orders.html">Заказы</a></li>                   
                         </ul>
                     </div>
                     <div class="md_menu2">
-                        <img class="md_menu2_img1" src="./Icons/icon_shop.svg" alt="icon_shop">
+                        <a href="./html/card.html"><img class="md_menu2_img1" src="./Icons/icon_shop.svg" alt="icon_shop"></a>
+
                         <p class="md_menu2_shop_cost">100000р.</p>
-                        <img class="md_menu2_img2" src="./Icons/icon_login.svg" alt="icon_login">
-                        <button class="md_menu2_button">Войти</button>
+                        <a href="./html/my_info.html"><img class="md_menu2_img2" src="./Icons/icon_login.svg" alt="icon_login"></a>
+                        <button class="md_menu2_button"><a href="./html/authorization_orders.html">Войти</a></button>
                     </div>
                     <div class="md_menu_mobile">
                         <img class="md_mm_img" src="./Icons/mobile_menu.svg" alt="Menu">
@@ -226,6 +227,10 @@
             </div>
         </section>
     </section>
+    <script>
+        let sing=document.querySelector('.md_menu2_button');
+        sing.innerText=JSON.parse(localStorage.getItem('user')).firstName|| 'Войти'
+    </script>
     <script src="./garage_home.js"></script>
 </body>
 </html>
