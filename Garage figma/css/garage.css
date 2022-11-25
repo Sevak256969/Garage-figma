@@ -65,7 +65,7 @@
   text-decoration: none;
   list-style-type: none;
 }
-.md_menu_li {
+.md_menu_li a{
   font-family: Gilroy-400;
   padding: 0px 25px 0px 25px;
   font-size: 18px;
@@ -87,6 +87,7 @@
   height: 22px;
   border: 2px solid #4ba9ff;
   padding: 7px 30px 7px 30px;
+  margin-top: 5px;
 }
 .md_menu2_button {
   font-family: Gilroy-400;
@@ -1251,7 +1252,7 @@
 .parmd2_1_input {
   width: 265px;
   height: 63px;
-  border: 1px solid rgba(67, 66, 66, 0.5);
+  /* border: 1px solid rgba(67, 66, 66, 0.5); */
   text-indent: 40px;
   font-family: Gilroy-400;
   font-size: 18px;
