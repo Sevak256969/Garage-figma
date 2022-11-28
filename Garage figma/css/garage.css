@@ -117,6 +117,23 @@
     width: 100%;
     margin: 5px 0px 5px 0px;
   }
+  .burger-list{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    font-size: 3vw;
+
+}
+.burger{
+    display: block;
+    position: fixed;
+    right: 0;
+    top: 130px;
+    background: transparent;
+    width: auto;
+    background-color: white;
+    z-index: 1000;
+}
 }
 
 /* DIV 1 SEARCH  */

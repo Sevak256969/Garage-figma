@@ -3,12 +3,13 @@ const registor = {
   password:"",
   passwordRepeat:"",
   lastName:"",
-  firstName: "",
-  middleName:""
+  firstName: ""
+  // middleName:""
 }
 const form = document.formRegistor;
 form[0].addEventListener("change",event=>{   
-  if(registor.email = event.target.value){
+  if(event.target.value){
+    registor.email = event.target.value
   form[0].className = "parmd2_1_input success"
   form[0].nextElementSibling.innerHTML = "";
 }else{
@@ -72,8 +73,7 @@ form.addEventListener("submit",e => e.preventDefault());
 form[6].addEventListener("click", function (){
   const id=JSON.parse(localStorage.getItem('user')).id ?? null;
    if(registor?.email && registor?.firstName && registor?.lastName && registor?.middleName && registor?.password){
-     fetch(`https://api-generator.retool.com/78mo0Y/registor/${id}` ,{
-   
+     fetch(`https://api-generator.retool.com/78mo0Y/registor/${id}`,{   
        method:'PUT',
        headers: {
          "Accept":"application/json",
