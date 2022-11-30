@@ -69,23 +69,6 @@ const registor = {
     }
   })
   form.addEventListener("submit",e => e.preventDefault());
-  // form[6].addEventListener("click", function (){
-  //   if(registor?.email && registor?.firstName && registor?.lastName && registor?.password  && registor?.middleName){
-  //     fetch("https://api-generator.retool.com/78mo0Y/registor",{
-  //       method:'POST',
-  //       headers: {
-  //         "Accept":"application/json",
-  //         "Content-Type":"application/json"
-  //       },
-  //       body: JSON.stringify(registor)
-  //     })
-  //     .then(response => console.log(response.json()))
-  //     .catch(er => console.error(er))     
-  //     console.log(window.location.href.split("/"));
-  //   }else{
-  //     alert("chexav")
-  //   }
-  // })
   form[6].addEventListener("click", function (){
     console.log(registor);
   if(registor?.email && registor?.firstName && registor?.lastName && registor?.middleName && registor?.password){
