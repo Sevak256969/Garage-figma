@@ -14,43 +14,47 @@ burgerBtn.addEventListener('click',()=> {
 
 
 // Slider //
-// let img = document.querySelector(".slide-img");
-// let nextSlide = document.querySelector(".nextslide");
-// let prevSlide = document.querySelector(".prevslide");
-// let arr = [
-//   "./img/slide1.png",
-//   "./img/slide2.png",
-//   "./img/slide3.png",
-//   "./img/slide4.png",
-// ];
-// let i = 0;
-// let count = document.querySelector(".count-of-slider");
-// count.innerHTML = `<span class="numbers1">01</span><span class="numbers2">/0${arr.length}</span> `;
-// function nextSlider() {
-//   if (i == arr.length - 1) {
-//     i = 0;
-//   } else {
-//     i++;
-//   }
-//   img.src = arr[i];
-//   count.innerHTML = `<span class="numbers1">0${
-//     i + 1
-//   }/</span><span class="numbers2">0${arr.length}</span> `;
-// }
-// nextSlide.addEventListener("click", nextSlider);
+let img = document.querySelector(".slide-img");
+let nextSlide = document.querySelector(".nextslide");
+let prevSlide = document.querySelector(".prevslide");
+let arr = [
+  "./photo/slide1.png",
+  "./photo/slide2.png",
+  "./photo/slide3.png",
+  "./photo/slide4.png",
+  "./photo/slide1.png",
+  "./photo/slide2.png",
+  "./photo/slide3.png",
+  "./photo/slide1.png",
+];
+let i = 0;
+let count = document.querySelector(".count-of-slider");
+count.innerHTML = `<span class="numbers1">01</span><span class="numbers2">/0${arr.length}</span> `;
+function nextSlider() {
+  if (i == arr.length - 1) {
+    i = 0;
+  } else {
+    i++;
+  }
+  img.src = arr[i];
+  count.innerHTML = `<span class="numbers1">0${
+    i + 1
+  }/</span><span class="numbers2">0${arr.length}</span> `;
+}
+nextSlide.addEventListener("click", nextSlider);
 
-// function prevSlider() {
-//   if (i <= arr.length - 1 && i > 0) {
-//     i--;
-//   } else if (i == 0) {
-//     i = arr.length - 1;
-//   }
-//   img.src = arr[i];
-//   count.innerHTML = `<span class="numbers1">0${
-//     i + 1
-//   }/</span><span class="numbers2">0${arr.length}</span> `;
-// }
-// prevSlide.addEventListener("click", prevSlider);
+function prevSlider() {
+  if (i <= arr.length - 1 && i > 0) {
+    i--;
+  } else if (i == 0) {
+    i = arr.length - 1;
+  }
+  img.src = arr[i];
+  count.innerHTML = `<span class="numbers1">0${
+    i + 1
+  }/</span><span class="numbers2">0${arr.length}</span> `;
+}
+prevSlide.addEventListener("click", prevSlider);
 //          //
 // Paginatin//
 //         //

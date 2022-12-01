@@ -13,9 +13,4 @@ burgerBtn.addEventListener('click',()=> {
 })
 
 let sing=document.querySelector('.md_menu2_button');
-sing.innerText=JSON.parse(localStorage.getItem('user')).firstName || 'Войти'
-
-// const signInnBtn = document.querySelector('.signIn')
-// localStorage.hasOwnProperty('user') ? signInnBtn.innerText = JSON.parse(localStorage.getItem('user')).firstname : signInnBtn.innerText = 'Войти'
-
-
+sing.innerText=JSON.parse(localStorage.getItem('user')) ? JSON.parse(localStorage.getItem('user')).firstName : 'Войти'

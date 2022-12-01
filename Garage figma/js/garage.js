@@ -1,16 +1,13 @@
-
 let div1 = document.querySelector('.div7_grid_cont_product');
 let div2 = document.querySelector('.div7_grid_cont_title');
 let div3 = document.querySelector('.div7_grid_cont_buttons');
 let div4 = document.querySelector('.grid-container');
 let div5 = document.querySelector('.div7_grid_cont_h5');
 
-
-
 function f2() {
     fetch("https://retoolapi.dev/fHtZfi/data")
-      .then((res) => res.json())
-      .then((users) => {
+    .then((res) => res.json())
+    .then((users) => {
         users.forEach((item) => {
             let div = document.createElement("div");
             div.dataset.id = item.id;
@@ -34,11 +31,10 @@ function f2() {
                     <img class="div7_grid_cont_addtc" src="./Icons/icon_shop.svg" alt="Add to card">
                 </div>
             </div>
-        </div>`;
-            div4.append(div);
-            
+            </div>`;
+            div4.append(div);           
         });
-      });
-  }
+    });
+}
 
 f2();

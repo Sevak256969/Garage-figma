@@ -3,8 +3,8 @@ const registor = {
   password:"",
   passwordRepeat:"",
   lastName:"",
-  firstName: ""
-  // middleName:""
+  firstName: "",
+  middleName:""
 }
 const form = document.formRegistor;
 form[0].addEventListener("change",event=>{   
@@ -70,10 +70,10 @@ form[5].addEventListener("change",event=>{
   }
 })
 form.addEventListener("submit",e => e.preventDefault());
-form[6].addEventListener("click", function (){
+form.addEventListener("click", function (){
   const id=JSON.parse(localStorage.getItem('user')).id ?? null;
-   if(registor?.email && registor?.firstName && registor?.lastName && registor?.middleName && registor?.password){
-     fetch(`https://api-generator.retool.com/78mo0Y/registor/${id}`,{   
+  if(registor?.email && registor?.firstName && registor?.lastName && registor?.middleName && registor?.password){
+     fetch(`https://api-generator.retool.com/G0TfpI/registor/${id}`,{   
        method:'PUT',
        headers: {
          "Accept":"application/json",
@@ -84,5 +84,31 @@ form[6].addEventListener("click", function (){
    .then(response =>response.json())
    .then(res => localStorage.setItem('user',JSON.stringify(res)))
    .catch(er => console.error(er))     
- }
+  }
  })
+ 
+//  form.addEventListener("submit", (e) => e.preventDefault());
+//  form.addEventListener("submit", (e) => e.preventDefault());
+//  changetBtn.addEventListener("click", () => {
+//    const id = JSON.parse(localStorage.getItem('user')).id ?? null;
+//    if (
+//      userData?.email &&
+//      userData?.firstName &&
+//      userData?.lastName &&
+//      userData?.midleName &&
+//      userData?.password
+//    ) {
+//      fetch(`https://api-generator.retool.com/G0TfpI/registor/${id}`, {
+//        method: "PUT",
+//        headers: {
+//          Accept: "application/json",
+//          "Content-type": "application/json",
+//        },
+//        body: JSON.stringify(userData),
+//      })
+//      .then(receivedData => receivedData.json())
+//      .then(data => localStorage.setItem('user',JSON.stringify(data)))
+//        .then(() => (window.location.pathname = "home%20page/index.html"))
+//        .catch((er) => console.error("errorrrr"));
+//    }
+//  });

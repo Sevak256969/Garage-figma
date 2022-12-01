@@ -72,8 +72,7 @@ const registor = {
   form[6].addEventListener("click", function (){
     console.log(registor);
   if(registor?.email && registor?.firstName && registor?.lastName && registor?.middleName && registor?.password){
-    fetch("https://api-generator.retool.com/78mo0Y/registor",{
-    
+    fetch("https://api-generator.retool.com/G0TfpI/registor",{  
       method:'POST',
       headers: {
         "Accept":"application/json",
@@ -82,13 +81,12 @@ const registor = {
       body: JSON.stringify(registor)
     })
     .then(response => response.json())
-    .then(res=> window.location.pathname='authorization_orders')
-    .catch(er => console.error(er))
-  
+    .then(res=> window.location.pathname='/Garage%20figma/html/authorization_orders.html')
+    .catch(er => console.error(er))  
 }
 }) 
 
-  fetch("https://api-generator.retool.com/78mo0Y/registor")
+  fetch("https://api-generator.retool.com/G0TfpI/registor")
   .then(response => response.json())
   .then(json => {
     const result = json.filter(user => user.email === "sevmovsisyan@mail.ru");
@@ -97,7 +95,7 @@ const registor = {
   .catch(er => console.error(er))
 
   // form[7].addEventListener("click", function (){
-  //   fetch("https://api-generator.retool.com/78mo0Y/registor",{
+  //   fetch("https://api-generator.retool.com/G0TfpI/registor",{
   //     method:'GET',
   //     headers: {
   //       "Accept":"application/json",
@@ -113,27 +111,8 @@ const registor = {
   //   .catch(er => console.error(er))
   // })
 
-//   const url = 'https://api-generator.retool.com/78mo0Y/registor';
-// fetch(url, {
-//     headers: {
-//         "User-Agent": "My User Agent",
-//     },
-// })
-//     .then((response) => response.json())
-//     .then(data => {
-//         console.log(data);
-//     })
 
-  // fetch(url, {
-  //   method: 'POST',
-  //   body: JSON.stringify(data),
-  //   headers: {
-  //     'Content-type': 'application/json; charset=UTF-8'
-  //   }
-  // })
-  //   .then(response => response.json())
-  //   .then(json => console.log(json));
-  
+
   
   
 
