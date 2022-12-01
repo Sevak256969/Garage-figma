@@ -104,13 +104,11 @@
   color: white;
   text-decoration: none;
 }
-
 .md_menu_mobile {
   display: none;
 }
 
 /* HEADER => MEDIA*/
-
 @media screen and (max-width: 1650px) {
   .md_menu {display: none;}
   .md_menu2 {display: none;}
@@ -129,8 +127,8 @@
     gap: 40px;
     font-size: 3vw;
 
-}
-.burger{
+  }
+  .burger{
     display: block;
     position: fixed;
     right: 0;
@@ -139,7 +137,7 @@
     width: auto;
     background-color: white;
     z-index: 1000;
-}
+  }
 }
 
 /* DIV 1 SEARCH  */
@@ -174,34 +172,56 @@
 @media screen and (max-width: 800px) {
   .div1_search_input {
     width: 45vw;
-  }
-  
+  } 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* MAIN */
 /* DIV 2 SLIDER */
+.product {
+  width: 60%;
+  position: relative;
+}
+.count-of-slider {
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+}
+.slide-buttons {
+  display: flex;
+  position: absolute;
+  bottom: 10px;
+  left: -60px;
+}
+.numbers1 {
+  font-weight: bolder;
+  color: #4ba9ff;
+  font-size: 2.5vw;
+}
+.numbers2 {
+  font-weight: bolder;
+  color: black;
+  font-size: 1.8vw;
+}
+.prevslide {
+  border: 1px solid #000000;
+  padding: 10px;
+  background-color: white;
+  margin-right: 11px;
+}
+.nextslide {
+  border: 1px solid #4ba9ff;
+  padding: 10px;
+  background-color: #4ba9ff;
+  margin-left: 11px;
+}
+.slider {
+  width: 100%;
+  display: flex;
+}
+.slide-img {
+  width: 100%;
+  height: auto;
+}
 .div2_slider {
   display: flex;
   flex-direction: row;
@@ -239,64 +259,6 @@
   height: 100px;
   color: #ffffff;
 }
-.div2_slider_sec2 {
-  position: absolute;
-  display: flex;
-  right: 12.5%;
-  align-items: flex-end;
-  z-index: -1;
-  margin-bottom: -95px;
-}
-.div2_slider_sec2_2buttons {
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 80px;
-  margin-right: 150px;
-}
-.div2_slider_sec2_b1 {
-  width: 50px;
-  height: 50px;
-  border: 1px solid #000000;
-  border-radius: 0px;
-  margin-right: 11px;
-}
-.div2_slider_sec2_b2 {
-  width: 50px;
-  height: 50px;
-  border: solid #4ba9ff;
-  background-color: #4ba9ff;
-  color: white;
-  border-radius: 0px;
-  margin-left: 11px;
-}
-.div2_slider_sec2_photo {
-  position: absolute;
-}
-.div1_slider_sec2_img {
-  width: 540px;
-}
-.div2_slider_sec2_p {
-  margin-bottom: 80px;
-  padding: 0px;
-  margin-left: 150px;
-}
-.sd1s2p {
-  font-family: "Montserrat Alternates", sans-serif;
-  font-size: 40px;
-  font-weight: 400;
-  margin: 0px 0px -10px 0px;
-}
-.sd1s2ps {
-  color: #4ba9ff;
-  font-family: "Montserrat Alternates", sans-serif;
-  font-weight: 600;
-  font-size: 64px;
-  margin: 0px;
-  padding: 0px;
-}
-
-
-
 @media screen and (max-width: 1650px) {
   .div2_slider {
     display: flex;
@@ -321,34 +283,13 @@
     position: absolute;
     right: 250px;
   }
-  .div2_slider_sec2 {
-    position: unset;
+  .product {
+    /* position: unset; */
     align-items: flex-end;
     margin: auto;
     order: 2;
   }
-
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* DIV 3 3-BUTTONS */
 .div3_3buttons {
   margin: 72px 0px 0px 0px;
@@ -379,14 +320,7 @@
   .div3_3buttons_1_1 {
     margin: 30px 5px 30px 5px;
   }
-
 }
-
-
-
-
-
-
 
 /* DIV 4 ABOUT */
 .div4_about {
@@ -431,11 +365,10 @@
   align-self: flex-end;
 }
 .d4a2i {
-  width: 595px;
+  width: 674px;
   height: auto;
   overflow: hidden;
 }
-
 
 /* DIV 4 ABOUT => MEDIA*/
 @media screen and (max-width: 1650px) {
@@ -444,21 +377,16 @@
     flex-direction: column;
     width: 50%;
   }
-
   .d4ap {
     font-family: Gilroy-400;
     font-size: 18px;
     width: auto;
     line-height: 18px;
     flex-wrap: wrap;
-  }
-  
-  
-  
+  } 
   .div4_abour2 {
     overflow: hidden;
   }
-
   .d4ab {
     width: 30vw;
     height: 100px;
@@ -468,24 +396,7 @@
     border-color: rgba(0, 0, 0, 0.3);
     margin-top: 2vw;
   }
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* DIV 5 CATALOG TITLE */
 .div5_catalog_title {
   display: flex;
@@ -511,9 +422,7 @@
   width: 100%;
 }
 
-
 /* CATALOG */
-
 .cd5cth4 {
   font-family: Gilroy-500;
   font-size: 4vw;
@@ -522,17 +431,10 @@
   width: 100%;
 }
 
-
-
-
-
-
-
 /* DIV 6 CATALOG MENU  */
 .div6_catalog_menu1 {
   display: flex;
-  justify-content: center;
-  
+  justify-content: center; 
 }
 .div6_catalog_menu_ul {
   display: flex;
@@ -548,16 +450,6 @@
   padding: 15px 20px 15px 20px;
   text-align: center;
 }
-
-/* DIV 6 CATALOG MENU => MEDIA  */
-
-
-
-
-
-
-
-
 
 /* DIV 7 CATALOG PRODUCTS */
 .div7_catalog_products {
@@ -623,13 +515,9 @@
   }
   .div7_catalog_products_filter {
     display: flex;
-    justify-content: center;
-    
+    justify-content: center; 
   }
-  
-
 }
-
 
 /* DIV 7 CATALOG PRODUCTS 2PART */
 .div7_catalog_products_items {
@@ -721,7 +609,6 @@
   justify-content: center;
   margin: 50px;
 }
-
 .d7cppb_prev {
   width: 60px;
   height: 60px;
@@ -729,7 +616,6 @@
   border: none;
   margin: 8px;
 }
-
 .d7cppb_next {
   width: 60px;
   height: 60px;
@@ -737,16 +623,9 @@
   border: none;
   margin: 8px;
 }
-
 .d7cppb_img {
   height: 40px;
 }
-
-
-
-
-
-
 
 /* DIV 7 CATALOG PRODUCTS 2PART => MEDIA*/
 @media screen and (max-width: 1650px) {
@@ -756,14 +635,7 @@
     grid-template-rows: repeat(3, 473px);
     gap: 42px;
   }
-
 }
-
-
-
-
-
-
 
 /* PRO MAIN */
 .pmd1h2 {
@@ -852,7 +724,6 @@
   border: 1px solid rgba(67, 66, 66, 0.5);
   filter: drop-shadow(0px 20px 50px rgba(255, 129, 129, 0.05));
 }
-
 .pro_main_div4 {
   display: flex;
   justify-content: center;
@@ -884,9 +755,6 @@
   font-size: 15px;
   color: rgba(255, 129, 129, 1);
 }
-
-
-
 /* CARD MAIN */
 
 /* cards */
@@ -904,7 +772,6 @@
   gap: 1%;
   margin-bottom: 60px;
 }
-
 .pagination span:hover {
   color: white;
   background-color: #4ba9ff;
@@ -924,32 +791,26 @@
   align-items: center;
   padding: 30px 0;
 }
-
 .product-img {
   width: 80%;
 }
-
 .product-img img {
   width: 100%;
   height: auto;
 }
-
 .product-name {
   width: 80%;
   text-align: start;
 }
-
 .product-name p {
   font-weight: 700;
   font-size: 2vw;
 }
-
 .product-text {
   font-size: 1vw;
   line-height: 1.2vw;
   width: 80%;
 }
-
 .product-price {
   width: 80%;
   margin-top: 20px;
@@ -957,7 +818,6 @@
   align-items: center;
   justify-content: space-between;
 }
-
 .product-price p {
   cursor: pointer;
   color: white;
@@ -966,7 +826,6 @@
   background-color: #4ba9ff;
   border: 1px solid #4ba9ff;
 }
-
 .mention {
   font-size: 1vw;
   border: 1px solid rgba(0, 0, 0, 0.2);
@@ -977,12 +836,10 @@
   align-items: center;
   justify-content: space-between;
 }
-
 .plus {
   color: #48d399;
   font-size: 1.4vw;
 }
-
 .minus {
   color: #ff5454;
   font-size: 1.4vw;
@@ -1063,14 +920,6 @@
 .my_info_main_div2 {
   margin-top: 50px;
   margin-bottom: 70px;
-  display: flex;
-  justify-content: center;
-}
-.my_info_main_div2_div {
-  width: 49%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
 }
 .mimd2_2p {
   width: auto;
@@ -1081,7 +930,15 @@
   display: flex;
   justify-content: center;
 }
+.info{
+  display: flex;
+  justify-content: space-around;
+}
 .mimd3button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
   width: 265px;
   height: 63.83px;
   font-size: 20px;
@@ -1091,18 +948,13 @@
   background: #4BA9FF;
   margin-bottom: 70px;
 }
-
-
 /* BALANCE */
-
-
 .balance_main_div1 {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
   margin-top: 50px;
   margin-bottom: 50px;
-
 }
 
 .bmd1h2 {
@@ -1110,7 +962,6 @@
   font-size: 64px;
   color: #434242;
 }
-
 .bmd1p {
   display: flex;
   padding-left: 130px;
@@ -1160,14 +1011,12 @@
 .bmd3_d1_icon {
   padding-right: 15px;
 }
-
 .bmd3_d2_1 {
   display: flex;
   flex-direction: row;
   font-family: Gilroy-500;
   font-size: 1.4em;
 }
-
 .bmd3_d2_p1 {
   padding: 13px 77px 13px 73px;
 }
@@ -1216,9 +1065,6 @@
   font-size: 20px;
   font-family: Gilroy-700;
 }
-
-
-
 /* AUTHORIZATION ORDERS */
 .aomd1h2 {
   font-family: Gilroy-700;
@@ -1310,7 +1156,10 @@
   background: linear-gradient(180deg, #FF5454 0%, #CD4848 100%);
   box-shadow: 0px 20px 50px rgba(255, 129, 129, 0.3);
 }
-
+.cmed4button a{
+  text-decoration: none;
+  color: white;
+}
 
 /* DATE EDIT */
 .demd1h2 {
@@ -1344,6 +1193,10 @@
   color: white;
   margin-top: 80px;
 }
+.change{
+  text-decoration: none;
+  color: white;
+}
 .demd2_4_p {
   text-align: center;
   font-family: Gilroy-400;
@@ -1354,9 +1207,6 @@
 .demd2_4_a {
   color: rgba(255, 129, 129, 1);
 }
-
-
-
 /* PERSONAL ACCOUNT REGISTRATION */
 
 .parmd1h2 {
@@ -1383,12 +1233,10 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 70px;
-
 }
 .parmd2_1_input {
   width: 265px;
   height: 63px;
-  /* border: 1px solid rgba(67, 66, 66, 0.5); */
   text-indent: 40px;
   font-family: Gilroy-400;
   font-size: 18px;
@@ -1422,7 +1270,6 @@
   border: solid green;
 }
 
-
 /* CONTACTS */
 .conmd1h2 {
   font-family: Gilroy-700;
@@ -1447,7 +1294,6 @@
   color: rgba(0, 0, 0, 1);
   text-decoration: none;
 }
-
 
 /* GARAGE */
 .garmd1h2 {
@@ -1529,8 +1375,6 @@
   background: linear-gradient(180deg, #FF5454 0%, #CD4848 100%);
   box-shadow: 0px 20px 50px rgba(255, 129, 129, 0.3);
 }
-
-
 /* GARAGE EMPTY */
 .gar_em_md1h2 {
   font-family: Gilroy-700;
@@ -1560,9 +1404,6 @@
   background: linear-gradient(180deg, #FF5454 0%, #CD4848 100%);
   box-shadow: 0px 20px 50px rgba(255, 129, 129, 0.3);
 }
-
-
-
 /* ADDING CAR */
 .acd1h2 {
   font-family: Gilroy-700;
@@ -1718,10 +1559,6 @@
 .acmd2_8_a {
   color: rgba(255, 129, 129, 1);
 }
-
-
-
-
 /* ORDERS */
 .ordmd1h2 {
   font-family: Gilroy-700;
@@ -1748,21 +1585,6 @@ tbody {
   font-family: Gilroy-600;
   font-size: 24px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .omd2_table_tr2 {
   justify-content: center;
   align-items: center;
@@ -1827,127 +1649,6 @@ tbody {
   background-color: #EEEEEE;
   margin-bottom: 120px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* FOTTER */
 
 .full_fotter {
@@ -1955,7 +1656,6 @@ tbody {
   background: #f5f5f5;
   padding-bottom: 124px;
 }
-
 .fotter_main_div {
   display: flex;
   flex-direction: row;
@@ -1973,19 +1673,16 @@ tbody {
   font-size: 18px;
   margin-top: 50px;
 }
-
 .fotter_main_div2 {
   display: flex;
   flex-direction: column;
   margin-top: 78px;
 }
-
 .fm_div2_h5 {
   font-family: Gilroy-600;
   font-size: 24px;
   margin-bottom: 37px;
 }
-
 .fm_div2_p {
   text-decoration: none;
   list-style-type: none;
@@ -1994,7 +1691,6 @@ tbody {
   color: #434242;
   margin-bottom: 20px;
 }
-
 .fotter_main_div3 {
   display: flex;
   flex-direction: column;
@@ -2013,7 +1709,6 @@ tbody {
   color: #434242;
   margin-bottom: 20px;
 }
-
 .fotter_main_div4 {
   display: flex;
   flex-direction: column;
@@ -2024,7 +1719,6 @@ tbody {
   font-size: 24px;
   margin-bottom: 37px;
 }
-
 .fm_div4_p {
   text-decoration: none;
   list-style-type: none;
@@ -2035,7 +1729,6 @@ tbody {
   width: 15px;
   margin-right: 20px;
 }
-
 .fm_div4_mail {
   margin-bottom: 30px;
 }
